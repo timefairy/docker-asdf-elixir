@@ -3,11 +3,11 @@
 FROM alpine:3.5
 
 RUN apk --no-cache add \
+        g++
         bash \
-        ca-certificates \
         curl \
-        gcc \
         git \
+        ca-certificates \
         && update-ca-certificates
 
 ENV USER asdf
