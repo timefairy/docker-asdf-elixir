@@ -6,7 +6,7 @@
 * Reference
 
   1. [[https://github.com/asdf-vm/asdf][asdf]]
-  2. [[https://pkgs.alpinelinux.org/packages][alpine linux packages]]
+  2. [[https://pkgs.alpinelinux.org/contents][alpine linux packages]]
 
 ** Article
 
