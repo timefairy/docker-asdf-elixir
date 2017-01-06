@@ -11,3 +11,9 @@
 ** Article
 
    1. [[http://blog.zot24.com/tips-tricks-with-alpine-docker/][Tips & Tricks with Alpine + Docker]]
+
+* Tasks
+
+** TODO =make clean= asdf erlang
+
+** TODO clean =make= packages
