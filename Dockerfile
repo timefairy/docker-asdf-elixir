@@ -6,8 +6,7 @@ RUN apk --no-cache add \
         bash \
         ca-certificates \
         curl \
-        git \
-        && update-ca-certificates
+        git
 
 ENV USER asdf
 
