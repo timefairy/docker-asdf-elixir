@@ -28,12 +28,15 @@ RUN ["/bin/bash", "-c", \
      "source ~/.bashrc && \
       asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git && \
       asdf plugin-add erlang https://github.com/asdf-vm/asdf-erlang.git && \
-      asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir.git"]
+      asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir.git && \
+      asdf plugin-add elm    https://github.com/vic/asdf-elm.git && \
+      sed -i 's/curl -Lo/curl -kLo/' ~/.asdf/plugins/elm/bin/install"]
 
 RUN ["/bin/bash", "-c", \
      "source ~/.bashrc && \
       asdf install nodejs 6.9.1 && \
       asdf install erlang 19.2 && \
-      asdf install elixir 1.4.0"]
+      asdf install elixir 1.4.0 && \
+      asdf install elm    0.18.0"]
 
 ENTRYPOINT ["/bin/bash"]
