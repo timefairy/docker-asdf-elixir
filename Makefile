@@ -3,5 +3,6 @@
 build:
 	docker build -t alpine-asdf-phoenix .
 
-run:
+live:
+	docker pull timefairy/alpine-asdf-phoenix:latest
 	docker run -ti --rm timefairy/alpine-asdf-phoenix:latest
