@@ -44,6 +44,12 @@ RUN ["/bin/bash", "-c", "source ~/.bashrc && \
       asdf install elm    0.18.0"]
 
 RUN ["/bin/bash", "-c", "source ~/.bashrc && \
+      asdf global nodejs 6.9.4 && \
+      asdf global erlang 19.2 && \
+      asdf global elixir 1.4.0 && \
+      asdf global elm    0.18.0"]
+
+RUN ["/bin/bash", "-c", "source ~/.bashrc && \
       mix local.hex --force && \
       mix local.rebar --force && \
       mix archive.install \
