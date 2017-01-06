@@ -6,6 +6,7 @@ RUN apk --no-cache add \
         bash \
         ca-certificates \
         curl \
+        gcc \
         git \
         && update-ca-certificates
 
