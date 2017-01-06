@@ -23,16 +23,18 @@ RUN ["/bin/bash", "-c", \
       echo -e '\n. $HOME/.asdf/asdf.sh' >> ~/.bashrc && \
       echo -e '\n. $HOME/.asdf/completions/asdf.bash' >> ~/.bashrc"]
 
-RUN ["/bin/bash", "-c", "source ~/.bashrc && \
+RUN ["/bin/bash", "-c", \
+     "source ~/.bashrc && \
       asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git && \
       asdf plugin-add elm    https://github.com/vic/asdf-elm.git && \
       asdf plugin-add erlang https://github.com/asdf-vm/asdf-erlang.git && \
       asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir.git"]
 
-# RUN ["/bin/bash", "-c", "source ~/.bashrc && \
-#                          asdf install nodejs 6.9.1 && \
-#                          asdf install elm    0.18.0 && \
-#                          asdf install erlang 19.2 && \
-#                          asdf install elixir 1.4.0"]
+# RUN ["/bin/bash", "-c", \
+#      "source ~/.bashrc && \
+#       asdf install nodejs 6.9.1 && \
+#       asdf install elm    0.18.0 && \
+#       asdf install erlang 19.2 && \
+#       asdf install elixir 1.4.0"]
 
 ENTRYPOINT ["/bin/bash"]
