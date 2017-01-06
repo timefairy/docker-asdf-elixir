@@ -2,3 +2,9 @@
 #+DESCRIPTION: Docker image build w/ asdf-vm
 #+KEYWORDS:    alpine linux, asdf-vm, node.js, erlang, elixir, phoenix framework
 #+OPTIONS:     ^:{}
+
+* Reference
+
+** Article
+
+   1. [[http://blog.zot24.com/tips-tricks-with-alpine-docker/][Tips & Tricks with Alpine + Docker]]
