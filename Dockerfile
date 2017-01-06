@@ -7,8 +7,8 @@ ENV PHX_VER 1.2.1
 RUN apk --no-cache add \
         g++ \
         make \
-        libssh \
         ncurses-dev \
+        openssl-dev \
         perl \
         bash \
         curl \
