@@ -1,15 +1,8 @@
 #+TITLE:       docker-asdf-elixir
 #+DESCRIPTION: Docker image build w/ asdf-vm
 #+KEYWORDS:    asdf, nodejs, erlang, elixir
-#+OPTIONS:     ^:{}
+#+OPTIONS:     toc:nil ^:{}
+
+* docker-asdf-elixir
 
 asdf, nodejs, erlang, elixir
-
-* Reference
-
-  # 1. [[https://github.com/asdf-vm/asdf][asdf]]
-  # 2. [[https://pkgs.alpinelinux.org/contents][alpine linux packages]]
-
-** Article
-
-   # 1. [[http://blog.zot24.com/tips-tricks-with-alpine-docker/][Tips & Tricks with Alpine + Docker]]
