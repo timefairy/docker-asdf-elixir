@@ -1,5 +1,3 @@
-## -*- docker-image-name: "alpine-asdf-phoenix" -*-
-
 FROM alpine:3.5
 
 RUN apk --no-cache add \
@@ -27,23 +25,23 @@ RUN ["/bin/bash", "-c", "git clone https://github.com/asdf-vm/asdf.git ~/.asdf -
 RUN ["/bin/bash", "-c", "source ~/.bashrc && \
       asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git && \
       asdf plugin-add erlang https://github.com/asdf-vm/asdf-erlang.git && \
-      asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir.git && \
-      asdf plugin-add elm    https://github.com/vic/asdf-elm.git && \
-      sed -i 's/curl -Lo/curl -kLo/' ~/.asdf/plugins/elm/bin/install"]
+      asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir.git"]
+      # asdf plugin-add elm    https://github.com/vic/asdf-elm.git && \
+      # sed -i 's/curl -Lo/curl -kLo/' ~/.asdf/plugins/elm/bin/install
 
 RUN ["/bin/bash", "-c", "source ~/.bashrc && \
       asdf install nodejs 6.9.4 && \
-      asdf install nodejs 7.4.0 && \
       asdf install erlang 19.2 && \
       asdf install elixir 1.4.0 && \
-      asdf install elm    0.18.0 && \
       find /tmp -delete"]
+      # asdf install nodejs 7.4.0 && \
+      # asdf install elm    0.18.0 && \
 
 RUN ["/bin/bash", "-c", "source ~/.bashrc && \
       asdf global nodejs 6.9.4 && \
       asdf global erlang 19.2 && \
-      asdf global elixir 1.4.0 && \
-      asdf global elm    0.18.0"]
+      asdf global elixir 1.4.0"]
+      # asdf global elm    0.18.0"]
 
 # ENV PHX_VER 1.2.1
 
@@ -54,4 +52,4 @@ RUN ["/bin/bash", "-c", "source ~/.bashrc && \
 #        https://github.com/phoenixframework/archives/raw/master/phoenix_new-$PHX_VER.ez \
 #        --force"]
 
-ENTRYPOINT ["/bin/bash"]
+CMD ["/bin/bash"]
