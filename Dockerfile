@@ -38,7 +38,7 @@ RUN ["/bin/bash", "-c", "source ~/.bashrc && \
       asdf install erlang 19.2 && \
       asdf install elixir 1.4.0 && \
       asdf install elm    0.18.0 && \
-      su - -c 'rm -rf /tmp && mkdir -p /tmp'"]
+      rm -rf /tmp/*"]
 
 RUN ["/bin/bash", "-c", "source ~/.bashrc && \
       asdf global nodejs 6.9.4 && \
