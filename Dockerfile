@@ -7,7 +7,9 @@ RUN apt-get update && \
             autoconf \
             libncurses5-dev \
             libssh-dev \
-            unixodbc-dev && \
+            unixodbc-dev \
+            git \
+            curl && \
     apt-get clean -y && \
     apt-get autoclean -y && \
     apt-get autoremove -y && \
