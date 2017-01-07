@@ -42,7 +42,8 @@ RUN ["/bin/bash", "-c", "source ~/.bashrc && \
       asdf global nodejs 6.9.4 && \
       asdf global erlang 19.2 && \
       asdf global elixir 1.4.0 && \
-      asdf global elm    0.18.0"]
+      asdf global elm    0.18.0 && \
+      su - -c 'rm -rf /tmp && mkdir -p /tmp'"]
 
 # ENV PHX_VER 1.2.1
 
