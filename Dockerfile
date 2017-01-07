@@ -23,7 +23,8 @@ USER $USER
 RUN git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.2.1 && \
     echo "PATH=$HOME/.asdf/bin:$HOME/.asdf/shims"':$PATH' >> ~/.profile
 
-RUN asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git && \
+RUN source ~/.profile && \
+    asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git && \
     asdf plugin-add erlang https://github.com/asdf-vm/asdf-erlang.git && \
     asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir.git && \
     asdf plugin-add elm    https://github.com/vic/asdf-elm.git && \
