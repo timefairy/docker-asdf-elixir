@@ -1,19 +1,15 @@
-#+TITLE:       alpine-asdf-phoenix
+#+TITLE:       docker-asdf-elixir
 #+DESCRIPTION: Docker image build w/ asdf-vm
-#+KEYWORDS:    alpine linux, asdf-vm, node.js, erlang, elixir, phoenix framework
+#+KEYWORDS:    asdf, nodejs, erlang, elixir
 #+OPTIONS:     ^:{}
+
+asdf, nodejs, erlang, elixir
 
 * Reference
 
-  1. [[https://github.com/asdf-vm/asdf][asdf]]
-  2. [[https://pkgs.alpinelinux.org/contents][alpine linux packages]]
+  # 1. [[https://github.com/asdf-vm/asdf][asdf]]
+  # 2. [[https://pkgs.alpinelinux.org/contents][alpine linux packages]]
 
 ** Article
 
-   1. [[http://blog.zot24.com/tips-tricks-with-alpine-docker/][Tips & Tricks with Alpine + Docker]]
-
-* Tasks
-
-** TODO =make clean= asdf erlang
-
-** TODO clean =make= packages
+   # 1. [[http://blog.zot24.com/tips-tricks-with-alpine-docker/][Tips & Tricks with Alpine + Docker]]

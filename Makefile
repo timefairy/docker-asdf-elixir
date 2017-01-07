@@ -1,11 +1,11 @@
 .PHONY: build live clean
 
 build:
-	@docker build -t alpine-asdf-phoenix .
+	@docker build -t docker-asdf-elixir .
 
 live:
-	@docker pull timefairy/alpine-asdf-phoenix:latest
-	@docker run -ti --rm timefairy/alpine-asdf-phoenix:latest
+	@docker pull timefairy/docker-asdf-elixir:latest
+	@docker run -ti --rm timefairy/docker-asdf-elixir:latest
 
 clean:
 	@docker-delete-stopped-containers
