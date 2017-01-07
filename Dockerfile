@@ -3,6 +3,7 @@
 FROM alpine:3.5
 
 RUN apk --no-cache add \
+      	busybox-suid \
         g++ \
         make \
         ncurses-dev \
@@ -36,14 +37,14 @@ RUN ["/bin/bash", "-c", "source ~/.bashrc && \
       asdf install nodejs 7.4.0 && \
       asdf install erlang 19.2 && \
       asdf install elixir 1.4.0 && \
-      asdf install elm    0.18.0"]
+      asdf install elm    0.18.0 && \
+      su - -c 'rm -rf /tmp && mkdir -p /tmp'"]
 
 RUN ["/bin/bash", "-c", "source ~/.bashrc && \
       asdf global nodejs 6.9.4 && \
       asdf global erlang 19.2 && \
       asdf global elixir 1.4.0 && \
-      asdf global elm    0.18.0 && \
-      su - -c 'rm -rf /tmp && mkdir -p /tmp'"]
+      asdf global elm    0.18.0"]
 
 # ENV PHX_VER 1.2.1
 
