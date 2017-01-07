@@ -16,7 +16,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/* && \
     rm -rf /usr/share/doc/*
 
-RUN adduser -Ds $(which bash) asdf
+RUN useradd -ms $(which bash) asdf
 
 USER asdf
 
