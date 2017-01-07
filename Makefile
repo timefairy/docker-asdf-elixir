@@ -8,6 +8,5 @@ live:
 	@docker run -ti --rm timefairy/alpine-asdf-phoenix:latest
 
 clean:
-	@docker rmi alpine-asdf-phoenix:latest
 	@docker-delete-stopped-containers
 	@docker-purge-unnamed-images
