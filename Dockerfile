@@ -3,7 +3,6 @@
 FROM alpine:3.5
 
 RUN apk --no-cache add \
-      	busybox-suid \
         g++ \
         make \
         ncurses-dev \
