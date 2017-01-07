@@ -14,7 +14,7 @@ RUN apk --no-cache add \
 
 ENV USER asdf
 
-RUN adduser -D $USER
+RUN adduser -Ds $(which bash) $USER
 
 USER $USER
 
