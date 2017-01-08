@@ -35,7 +35,10 @@ RUN /bin/bash -c "asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.
 RUN /bin/bash -c "asdf install nodejs 6.9.4 && \
                   asdf install erlang 19.2 && \
                   asdf install elixir 1.4.0 && \
-                  rm -rf  /tmp/*"
+                  rm -rf  /tmp/* && \
+                  asdf global nodejs 6.9.4 && \
+                  asdf global erlang 19.2 && \
+                  asdf global elixir 1.4.0"
 
 # ENV PHX_VER 1.2.1
 
