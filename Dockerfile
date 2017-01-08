@@ -14,7 +14,6 @@ RUN apt-get update -qq && \
     apt-get clean -qq -y && \
     apt-get autoclean -qq -y && \
     apt-get autoremove -qq -y && \
-    rm -rf /usr/share/locale/* && \
     rm -rf /var/cache/debconf/*-old && \
     rm -rf /var/lib/apt/lists/* && \
     rm -rf /usr/share/doc/*
