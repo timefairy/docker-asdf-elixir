@@ -10,10 +10,7 @@ RUN apt-get update -qq && \
             unixodbc-dev \
             git \
             curl \
-            unzip \
-            locales && \
-    locale-gen C.UTF-8 && \
-    /usr/sbin/update-locale LANG=C.UTF-8 && \
+            unzip && \
     apt-get clean -qq -y && \
     apt-get autoclean -qq -y && \
     apt-get autoremove -qq -y && \
