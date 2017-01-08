@@ -6,3 +6,7 @@
 * docker-asdf-elixir
 
 asdf, nodejs, erlang, elixir
+
+#+BEGIN_SRC bash
+docker run -ti --rm timefairy/docker-asdf-elixir:latest /bin/bash
+#+END_SRC
