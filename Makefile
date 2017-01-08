@@ -4,14 +4,14 @@ build:
 	@docker build -t docker-asdf-elixir .
 
 run:
-	@docker run -ti --rm docker-asdf-elixir:latest /bin/bash
+	@docker run -ti --rm docker-asdf-elixir:latest
 
 delete:
 	@docker rmi docker-asdf-elixir:latest
 
 live:
 	@docker pull timefairy/docker-asdf-elixir:latest
-	@docker run -ti --rm timefairy/docker-asdf-elixir:latest /bin/bash
+	@docker run -ti --rm timefairy/docker-asdf-elixir:latest
 
 clean:
 	@docker-delete-stopped-containers
