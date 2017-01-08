@@ -12,7 +12,16 @@ docker run -ti --rm timefairy/docker-asdf-elixir:latest /bin/bash
 1.  <https://hub.docker.com/r/philcryer/min-wheezy/>
 2.  <https://github.com/MonsantoCo/docker-min-jessie>
 3.  <https://hub.docker.com/_/debian/> - Locales
-4.  <https://github.com/parroty/circle_sample/blob/master/circle.yml>
+
+
+### `asdf-erlang` dependencies
+
+1.  <https://github.com/asdf-vm/asdf-erlang>
+
+
+### asdf install new version in CI
+
+1.  <https://github.com/parroty/circle_sample/blob/master/circle.yml>
 
 
 ### Something about alpine
