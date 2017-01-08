@@ -9,7 +9,8 @@ RUN apt-get update && \
             libssh-dev \
             unixodbc-dev \
             git \
-            curl && \
+            curl \
+            unzip && \
     apt-get clean -y && \
     apt-get autoclean -y && \
     apt-get autoremove -y && \
@@ -24,7 +25,7 @@ USER asdf
 
 RUN /bin/bash -c "git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.2.1"
 
-ENV PATH /home/asdf/.asdf/bin:/home/asdf/.asdf/shims:$PATH
+ENV PATH $HOME/.asdf/bin:$HOME/.asdf/shims:$PATH
 
 RUN /bin/bash -c "asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git && \
                   asdf plugin-add erlang https://github.com/asdf-vm/asdf-erlang.git && \
