@@ -1,8 +1,8 @@
 FROM debian:jessie
 
-RUN apt-get update && \
-    apt-get upgrade -y && \
-    apt-get install -y \
+RUN apt-get update -qq && \
+    apt-get upgrade -qq -y && \
+    apt-get install -qq -y \
             build-essential \
             autoconf \
             libncurses5-dev \
@@ -10,14 +10,21 @@ RUN apt-get update && \
             unixodbc-dev \
             git \
             curl \
-            unzip && \
-    apt-get clean -y && \
-    apt-get autoclean -y && \
-    apt-get autoremove -y && \
+            unzip \
+            locales && \
+    echo "en_US.UTF-8 UTF-8" > /etc/locale.gen && \
+    locale-gen en_US.UTF-8 && \
+    dpkg-reconfigure locales && \
+    /usr/sbin/update-locale LANG=en_US.UTF-8 && \
+    apt-get clean -qq -y && \
+    apt-get autoclean -qq -y && \
+    apt-get autoremove -qq -y && \
     rm -rf /usr/share/locale/* && \
     rm -rf /var/cache/debconf/*-old && \
     rm -rf /var/lib/apt/lists/* && \
     rm -rf /usr/share/doc/*
+
+ENV LC_ALL en_US.UTF-8
 
 RUN useradd -ms $(which bash) asdf
 
