@@ -1,6 +1,6 @@
 # docker-asdf-elixir
 
-Docker image for CI, build w/ `asdf, nodejs, erlang, elixir`
+Docker image for CI, build w/ `asdf, nodejs, erlang, elixir, elm`
 
 
 ## Try it
