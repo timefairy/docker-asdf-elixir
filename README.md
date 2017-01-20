@@ -12,6 +12,13 @@ docker run -ti --rm timefairy/docker-asdf-elixir:latest
 
 ## References
 
+1.  <https://github.com/asdf-vm/asdf>
+2.  <https://github.com/asdf-vm/asdf-erlang>
+3.  <https://github.com/asdf-vm/asdf-elixir>
+
+
+### About debian image
+
 1.  <https://hub.docker.com/r/philcryer/min-wheezy/>
 2.  <https://github.com/MonsantoCo/docker-min-jessie>
 3.  <https://hub.docker.com/_/debian/> - Locales

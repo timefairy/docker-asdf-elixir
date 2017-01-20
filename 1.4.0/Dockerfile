@@ -22,18 +22,16 @@ ENV LANG C.UTF-8
 
 RUN useradd -ms $(which bash) asdf
 
-USER asdf
-
-RUN /bin/bash -c "git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.2.1"
-
 ENV PATH /home/asdf/.asdf/bin:/home/asdf/.asdf/shims:$PATH
 
-RUN /bin/bash -c "asdf plugin-add erlang https://github.com/asdf-vm/asdf-erlang.git && \
-                  asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir.git"
+USER asdf
 
-RUN /bin/bash -c "asdf install erlang 19.2 && \
-                  rm -rf  /tmp/* && \
+RUN /bin/bash -c "git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.2.1 && \
+                  asdf plugin-add erlang https://github.com/asdf-vm/asdf-erlang.git && \
+                  asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir.git && \
+                  asdf install erlang 19.2 && \
                   asdf install elixir 1.4.0 && \
+                  rm -rf  /tmp/* && \
                   asdf global erlang 19.2 && \
                   asdf global elixir 1.4.0"
 
