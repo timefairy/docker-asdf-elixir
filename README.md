@@ -1,6 +1,6 @@
 # docker-asdf-elixir
 
-Docker image for CI, build w/ `asdf, nodejs, erlang, elixir, elm`
+Docker image for CI, build w/ `asdf, nodejs, erlang, elixir`
 
 
 ## Try it
@@ -27,8 +27,8 @@ docker run -ti --rm timefairy/docker-asdf-elixir:latest
 1.  <https://github.com/parroty/circle_sample/blob/master/circle.yml>
 
 ```yaml
-- erlang_version=$(awk '/erlang/ { print $2 }' .tool-versions) && asdf install erlang ${erlang_version}
-- elixir_version=$(awk '/elixir/ { print $2 }' .tool-versions) && asdf install elixir ${elixir_version}
+# - erlang_version=$(awk '/erlang/ { print $2 }' .tool-versions) && asdf install erlang ${erlang_version}
+# - elixir_version=$(awk '/elixir/ { print $2 }' .tool-versions) && asdf install elixir ${elixir_version}
 ```
 
 

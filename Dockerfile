@@ -30,18 +30,15 @@ ENV PATH /home/asdf/.asdf/bin:/home/asdf/.asdf/shims:$PATH
 
 RUN /bin/bash -c "asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git && \
                   asdf plugin-add erlang https://github.com/asdf-vm/asdf-erlang.git && \
-                  asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir.git && \
-                  asdf plugin-add elm    https://github.com/vic/asdf-elm.git"
+                  asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir.git"
 
 RUN /bin/bash -c "asdf install nodejs 6.9.4 && \
                   asdf install erlang 19.2 && \
                   asdf install elixir 1.4.0 && \
-                  asdf install elm    0.18.0 && \
                   rm -rf  /tmp/* && \
                   asdf global nodejs 6.9.4 && \
                   asdf global erlang 19.2 && \
-                  asdf global elixir 1.4.0 && \
-                  asdf global elm    0.18.0"
+                  asdf global elixir 1.4.0"
 
 # ENV PHX_VER 1.2.1
 

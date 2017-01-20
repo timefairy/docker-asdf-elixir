@@ -5,9 +5,10 @@
 
 * docker-asdf-elixir
 
-Docker image for CI, build w/ =asdf, nodejs, erlang, elixir, elm=
+Docker image for CI, build w/ ~asdf, nodejs, erlang, elixir~
 
 ** Try it
+
 #+BEGIN_SRC bash
 docker run -ti --rm timefairy/docker-asdf-elixir:latest
 #+END_SRC
@@ -18,14 +19,17 @@ docker run -ti --rm timefairy/docker-asdf-elixir:latest
    2. [[https://github.com/MonsantoCo/docker-min-jessie]]
    3. [[https://hub.docker.com/_/debian/]] - Locales
 
-*** =asdf-erlang= dependencies
+*** ~asdf-erlang~ dependencies
+
     1. [[https://github.com/asdf-vm/asdf-erlang]]
 
 *** asdf install new version in CI
+
     1. [[https://github.com/parroty/circle_sample/blob/master/circle.yml]]
+
 #+BEGIN_SRC yaml
-- erlang_version=$(awk '/erlang/ { print $2 }' .tool-versions) && asdf install erlang ${erlang_version}
-- elixir_version=$(awk '/elixir/ { print $2 }' .tool-versions) && asdf install elixir ${elixir_version}
+  # - erlang_version=$(awk '/erlang/ { print $2 }' .tool-versions) && asdf install erlang ${erlang_version}
+  # - elixir_version=$(awk '/elixir/ { print $2 }' .tool-versions) && asdf install elixir ${elixir_version}
 #+END_SRC
 
 *** Something about alpine
