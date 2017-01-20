@@ -2,7 +2,7 @@
 #+DESCRIPTION: Docker image build w/ asdf-vm
 #+KEYWORDS:    asdf, erlang, elixir
 #+Repository:  https://github.com/luckynum7/docker-asdf-elixir
-#+Docker Hub:  https://hub.docker.com/r/timefairy/docker-asdf-elixir/
+#+DOCKER+HUB:  https://hub.docker.com/r/timefairy/docker-asdf-elixir/
 #+OPTIONS:     toc:nil ^:{}
 
 * docker-asdf-elixir
