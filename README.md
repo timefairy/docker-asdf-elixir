@@ -3,6 +3,12 @@
 Docker image for CI, build w/ `asdf, erlang, elixir`
 
 
+## Supported tags and respective `Dockerfile` links
+
+-   `1.4.0` [1.4.0/Dockerfile](https://github.com/luckynum7/docker-asdf-elixir/blob/master/1.4.0/Dockerfile)
+-   `latest` [Dockerfile](https://github.com/luckynum7/docker-asdf-elixir/blob/master/Dockerfile)
+
+
 ## Try it
 
 ```bash
