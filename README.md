@@ -5,7 +5,7 @@ Docker image for CI, build w/ `asdf, erlang, elixir` [timefairy/docker-asdf-elix
 
 ## Supported tags and respective `Dockerfile` links
 
--   `1.4` [Dockerfile](https://github.com/luckynum7/docker-asdf-elixir/blob/1.4/Dockerfile)
+-   `1.4.0` [Dockerfile](https://github.com/luckynum7/docker-asdf-elixir/blob/1.4.0/Dockerfile)
 -   `latest` [Dockerfile](https://github.com/luckynum7/docker-asdf-elixir/blob/master/Dockerfile)
 
 
