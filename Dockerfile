@@ -30,10 +30,10 @@ RUN /bin/bash -c "git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch
                   asdf plugin-add erlang https://github.com/asdf-vm/asdf-erlang.git && \
                   asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir.git && \
                   asdf install erlang 19.2 && \
-                  asdf install elixir 1.4.0 && \
+                  asdf install elixir 1.4.1 && \
                   rm -rf  /tmp/* && \
                   asdf global erlang 19.2 && \
-                  asdf global elixir 1.4.0"
+                  asdf global elixir 1.4.1"
 
 # ENV PHX_VER 1.2.1
 
