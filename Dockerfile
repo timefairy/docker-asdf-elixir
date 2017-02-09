@@ -29,11 +29,11 @@ USER asdf
 RUN /bin/bash -c "git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.2.1 && \
                   asdf plugin-add erlang https://github.com/asdf-vm/asdf-erlang.git && \
                   asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir.git && \
-                  asdf install erlang 18.3 && \
-                  asdf install elixir 1.3.4 && \
+                  asdf install erlang 19.2 && \
+                  asdf install elixir 1.4.0 && \
                   rm -rf  /tmp/* && \
-                  asdf global erlang 18.3 && \
-                  asdf global elixir 1.3.4"
+                  asdf global erlang 19.2 && \
+                  asdf global elixir 1.4.0"
 
 # ENV PHX_VER 1.2.1
 
