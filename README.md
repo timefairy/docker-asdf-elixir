@@ -45,8 +45,3 @@ docker run -ti --rm timefairy/docker-asdf-elixir:latest
 # - erlang_version=$(awk '/erlang/ { print $2 }' .tool-versions) && asdf install erlang ${erlang_version}
 # - elixir_version=$(awk '/elixir/ { print $2 }' .tool-versions) && asdf install elixir ${elixir_version}
 ```
-
-
-### Something about alpine
-
-1.  <http://blog.zot24.com/tips-tricks-with-alpine-docker/>
