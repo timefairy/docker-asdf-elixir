@@ -1,4 +1,4 @@
-FROM debian:jessie
+FROM debian:jessie-slim
 
 RUN apt-get update -qq && \
     apt-get upgrade -qq -y && \
