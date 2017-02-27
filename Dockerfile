@@ -37,8 +37,8 @@ RUN /bin/bash -c "git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch
 # elixir
 
 RUN /bin/bash -c "asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir.git && \
-                  asdf install elixir 1.4.1 && \
-                  asdf global elixir 1.4.1 && \
+                  asdf install elixir 1.4.2 && \
+                  asdf global elixir 1.4.2 && \
                   rm -rf  /tmp/*"
 
 # ENV PHX_VER 1.2.1
