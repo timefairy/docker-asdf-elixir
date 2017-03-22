@@ -30,8 +30,8 @@ USER asdf
 
 RUN /bin/bash -c "git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.2.1 && \
                   asdf plugin-add erlang https://github.com/asdf-vm/asdf-erlang.git && \
-                  asdf install erlang 19.2 && \
-                  asdf global erlang 19.2 && \
+                  asdf install erlang 19.3 && \
+                  asdf global erlang 19.3 && \
                   rm -rf  /tmp/*"
 
 # elixir
