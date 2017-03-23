@@ -10,7 +10,8 @@ RUN apt-get update -qq && \
             unixodbc-dev \
             git \
             curl \
-            unzip && \
+            unzip \
+            inotify-tools && \
     apt-get clean -qq -y && \
     apt-get autoclean -qq -y && \
     apt-get autoremove -qq -y && \
